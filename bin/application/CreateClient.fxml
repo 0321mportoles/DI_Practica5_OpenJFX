@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateClientController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="143.0" layoutY="43.0" prefHeight="17.0" prefWidth="145.0" text="Nombre" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrName" layoutX="310.0" layoutY="70.0" prefHeight="17.0" prefWidth="170.0" text="Debes introducir un nombre" textFill="RED" visible="false" />
+            <Label layoutX="143.0" layoutY="98.0" prefHeight="17.0" prefWidth="145.0" text="Apellidos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrSurname" layoutX="310.0" layoutY="125.0" prefHeight="17.0" prefWidth="170.0" text="Debes introducir un apellido" textFill="RED" visible="false" />
+            <Label layoutX="143.0" layoutY="153.0" prefHeight="25.0" prefWidth="145.0" text="Documento ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrDocNumber" layoutX="310.0" layoutY="180.0" prefHeight="17.0" prefWidth="170.0" text="Debes introducir un documento" textFill="RED" visible="false" />
+            <Label layoutX="143.0" layoutY="208.0" prefHeight="25.0" prefWidth="137.0" text="Tipo documento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrDocType" layoutX="310.0" layoutY="235.0" prefHeight="17.0" prefWidth="170.0" text="Elige un tipo de documento" textFill="RED" visible="false" />
+            <Label layoutX="143.0" layoutY="263.0" prefHeight="17.0" prefWidth="106.0" text="Sexo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfName" layoutX="310.0" layoutY="43.0" prefHeight="25.0" prefWidth="170.0" promptText="Nombre" />
+            <TextField fx:id="tfSurname" layoutX="310.0" layoutY="98.0" prefHeight="25.0" prefWidth="170.0" promptText="Apellidos" />
+            <TextField fx:id="tfDocNumber" layoutX="310.0" layoutY="153.0" prefWidth="170.0" promptText="Número de identidad" />
+            <ComboBox fx:id="cbDocType" layoutX="310.0" layoutY="208.0" prefWidth="170.0" />
+            
+            <ComboBox fx:id="cbGender" layoutX="310.0" layoutY="263.0" prefWidth="170.0" />
+            <Button fx:id="btReset" layoutX="143.0" layoutY="318.0" mnemonicParsing="false" onAction="#actionReset" prefHeight="36.0" prefWidth="60.0" style="-fx-background-color: #ffc900;" text="Borrar" />
+            <Button fx:id="btCreate" layoutX="225.0" layoutY="318.0" mnemonicParsing="false" onAction="#actionCreateClient" prefHeight="36.0" prefWidth="255.0" style="-fx-background-color: #ffc900;" text="Crear cliente" textAlignment="CENTER" />
+            <Hyperlink layoutX="143.0" layoutY="15.0" onAction="#actionBack" prefHeight="23.0" prefWidth="166.0" text="Volver" textFill="#ffc900" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

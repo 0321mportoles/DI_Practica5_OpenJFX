@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPage">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="217.0" layoutY="85.0" mnemonicParsing="false" onAction="#actionCreateClient" prefHeight="36.0" prefWidth="183.0" style="-fx-background-color: #ffc900;" text="Crear cliente" />
+            <Button layoutX="217.0" layoutY="145.0" mnemonicParsing="false" onAction="#actionListClients" prefHeight="36.0" prefWidth="183.0" style="-fx-background-color: #ffc900;" text="Listar clientes" />
+            <Button disable="true" layoutX="217.0" layoutY="205.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="183.0" style="-fx-background-color: #ffc900;" text="Opción futura" />
+            <Button layoutX="217.0" layoutY="265.0" mnemonicParsing="false" onAction="#actionUserLogout" prefHeight="36.0" prefWidth="183.0" style="-fx-background-color: #ffc900;" text="Salir" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
